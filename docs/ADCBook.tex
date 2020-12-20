@@ -122,8 +122,9 @@
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
-\hypertarget{prerequisites}{%
-\chapter{Prerequisites}\label{prerequisites}}
+\hypertarget{intorduction}{%
+\chapter*{Intorduction}\label{intorduction}}
+\addcontentsline{toc}{chapter}{Intorduction}
 
 This is a \emph{sample} book written in \textbf{Markdown}. You can use anything that Pandoc's Markdown supports, e.g., a math equation \(a^2 + b^2 = c^2\).
 
@@ -141,102 +142,143 @@ Remember each Rmd file contains one and only one chapter, and a chapter is defin
 
 To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): \url{https://yihui.org/tinytex/}.
 
-\hypertarget{intro}{%
-\chapter{Introduction}\label{intro}}
+\hypertarget{recap}{%
+\chapter{Recap}\label{recap}}
 
-You can label chapter and section titles using \texttt{\{\#label\}} after them, e.g., we can reference Chapter \ref{intro}. If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \ref{methods}.
+\hypertarget{module-structure}{%
+\section{Module Structure}\label{module-structure}}
 
-Figures and tables with captions will be placed in \texttt{figure} and \texttt{table} environments, respectively.
+\hypertarget{revision}{%
+\section{Revision}\label{revision}}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{par}\NormalTok{(}\DataTypeTok{mar =} \KeywordTok{c}\NormalTok{(}\DecValTok{4}\NormalTok{, }\DecValTok{4}\NormalTok{, }\FloatTok{.1}\NormalTok{, }\FloatTok{.1}\NormalTok{))}
-\KeywordTok{plot}\NormalTok{(pressure, }\DataTypeTok{type =} \StringTok{'b'}\NormalTok{, }\DataTypeTok{pch =} \DecValTok{19}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
+\hypertarget{software-development}{%
+\section{Software Development}\label{software-development}}
 
-\begin{figure}
+\hypertarget{software-development-lifecycle}{%
+\subsection{Software Development Lifecycle}\label{software-development-lifecycle}}
 
-{\centering \includegraphics[width=0.8\linewidth]{ADCBook_files/figure-latex/nice-fig-1} 
+\hypertarget{intellectual-property}{%
+\subsection{Intellectual Property}\label{intellectual-property}}
 
-}
+\hypertarget{referencing}{%
+\subsection{Referencing}\label{referencing}}
 
-\caption{Here is a nice figure!}\label{fig:nice-fig}
-\end{figure}
+\hypertarget{version-control}{%
+\section{Version Control}\label{version-control}}
 
-Reference a figure by its code chunk label with the \texttt{fig:} prefix, e.g., see Figure \ref{fig:nice-fig}. Similarly, you can reference tables generated from \texttt{knitr::kable()}, e.g., see Table \ref{tab:nice-tab}.
+\hypertarget{git-and-github}{%
+\section{Git and GitHub}\label{git-and-github}}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{(}
-  \KeywordTok{head}\NormalTok{(iris, }\DecValTok{20}\NormalTok{), }\DataTypeTok{caption =} \StringTok{'Here is a nice table!'}\NormalTok{,}
-  \DataTypeTok{booktabs =} \OtherTok{TRUE}
-\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
+\hypertarget{memory-and-intorduction-to-classes}{%
+\chapter{Memory and Intorduction to Classes}\label{memory-and-intorduction-to-classes}}
 
-\begin{table}
+\hypertarget{heap-and-stack}{%
+\section{Heap and Stack}\label{heap-and-stack}}
 
-\caption{\label{tab:nice-tab}Here is a nice table!}
-\centering
-\begin{tabular}[t]{rrrrl}
-\toprule
-Sepal.Length & Sepal.Width & Petal.Length & Petal.Width & Species\\
-\midrule
-5.1 & 3.5 & 1.4 & 0.2 & setosa\\
-4.9 & 3.0 & 1.4 & 0.2 & setosa\\
-4.7 & 3.2 & 1.3 & 0.2 & setosa\\
-4.6 & 3.1 & 1.5 & 0.2 & setosa\\
-5.0 & 3.6 & 1.4 & 0.2 & setosa\\
-\addlinespace
-5.4 & 3.9 & 1.7 & 0.4 & setosa\\
-4.6 & 3.4 & 1.4 & 0.3 & setosa\\
-5.0 & 3.4 & 1.5 & 0.2 & setosa\\
-4.4 & 2.9 & 1.4 & 0.2 & setosa\\
-4.9 & 3.1 & 1.5 & 0.1 & setosa\\
-\addlinespace
-5.4 & 3.7 & 1.5 & 0.2 & setosa\\
-4.8 & 3.4 & 1.6 & 0.2 & setosa\\
-4.8 & 3.0 & 1.4 & 0.1 & setosa\\
-4.3 & 3.0 & 1.1 & 0.1 & setosa\\
-5.8 & 4.0 & 1.2 & 0.2 & setosa\\
-\addlinespace
-5.7 & 4.4 & 1.5 & 0.4 & setosa\\
-5.4 & 3.9 & 1.3 & 0.4 & setosa\\
-5.1 & 3.5 & 1.4 & 0.3 & setosa\\
-5.7 & 3.8 & 1.7 & 0.3 & setosa\\
-5.1 & 3.8 & 1.5 & 0.3 & setosa\\
-\bottomrule
-\end{tabular}
-\end{table}
+\hypertarget{classes}{%
+\section{Classes}\label{classes}}
 
-You can write citations, too. For example, we are using the \textbf{bookdown} package \citep{R-bookdown} in this sample book, which was built on top of R Markdown and \textbf{knitr} \citep{xie2015}.
+\hypertarget{reference-types-and-value-types}{%
+\section{Reference types and Value types}\label{reference-types-and-value-types}}
 
-\hypertarget{literature}{%
-\chapter{Literature}\label{literature}}
+\hypertarget{more-on-methods}{%
+\section{More on Methods}\label{more-on-methods}}
 
-Here is a review of existing methods.
+\hypertarget{arrays-and-collections}{%
+\chapter{Arrays and Collections}\label{arrays-and-collections}}
 
-\hypertarget{methods}{%
-\chapter{Methods}\label{methods}}
+\hypertarget{multi-dimensional-and-jagged-arrays}{%
+\section{Multi-Dimensional and Jagged Arrays}\label{multi-dimensional-and-jagged-arrays}}
 
-We describe our methods in this chapter.
+\hypertarget{lists}{%
+\section{Lists}\label{lists}}
 
-\hypertarget{applications}{%
-\chapter{Applications}\label{applications}}
+\hypertarget{objects-and-structures}{%
+\chapter{Objects and Structures}\label{objects-and-structures}}
 
-Some \emph{significant} applications are demonstrated in this chapter.
+\hypertarget{classes-and-objects}{%
+\section{Classes and Objects}\label{classes-and-objects}}
 
-\hypertarget{example-one}{%
-\section{Example one}\label{example-one}}
+\hypertarget{members}{%
+\section{Members}\label{members}}
 
-\hypertarget{example-two}{%
-\section{Example two}\label{example-two}}
+\hypertarget{structures}{%
+\section{Structures}\label{structures}}
 
-\hypertarget{final-words}{%
-\chapter{Final Words}\label{final-words}}
+\hypertarget{methods-and-properties}{%
+\section{Methods and Properties}\label{methods-and-properties}}
 
-We have finished a nice book.
+\hypertarget{algorithms}{%
+\chapter{Algorithms}\label{algorithms}}
+
+\hypertarget{lists-and-arrays}{%
+\section{Lists and Arrays}\label{lists-and-arrays}}
+
+\hypertarget{big-o-annotation}{%
+\section{Big O annotation}\label{big-o-annotation}}
+
+\hypertarget{search-algorithms}{%
+\section{Search Algorithms}\label{search-algorithms}}
+
+\hypertarget{sort-algorithms}{%
+\section{Sort Algorithms}\label{sort-algorithms}}
+
+\hypertarget{gui-and-more-on-classes}{%
+\chapter{GUI and more on Classes}\label{gui-and-more-on-classes}}
+
+\hypertarget{introduction-to-access-modifiers-public-and-private}{%
+\section{Introduction to access modifiers (Public and Private)}\label{introduction-to-access-modifiers-public-and-private}}
+
+\hypertarget{overriding}{%
+\section{Overriding}\label{overriding}}
+
+\hypertarget{user-interface-design-guidelines}{%
+\section{User Interface Design Guidelines}\label{user-interface-design-guidelines}}
+
+\hypertarget{general}{%
+\subsection{General}\label{general}}
+
+\hypertarget{windows-forms-specific}{%
+\subsection{Windows Forms Specific}\label{windows-forms-specific}}
+
+\hypertarget{forms}{%
+\section{Forms}\label{forms}}
+
+\hypertarget{add-controls-in-a-form}{%
+\subsection{Add controls in a form}\label{add-controls-in-a-form}}
+
+\hypertarget{designer}{%
+\subsection{Designer}\label{designer}}
+
+\hypertarget{controls-types}{%
+\subsection{Controls Types}\label{controls-types}}
+
+\hypertarget{programmatically-controlling-them}{%
+\subsection{Programmatically controlling them}\label{programmatically-controlling-them}}
+
+\hypertarget{testing-and-data-validation}{%
+\chapter{Testing and Data Validation}\label{testing-and-data-validation}}
+
+\hypertarget{introduction-to-test-driven-development}{%
+\section{Introduction to Test Driven Development}\label{introduction-to-test-driven-development}}
+
+\hypertarget{introduction-to-unit-testing}{%
+\section{Introduction to Unit Testing}\label{introduction-to-unit-testing}}
+
+\hypertarget{file-system}{%
+\chapter{File System}\label{file-system}}
+
+\hypertarget{access-files-directories-and-drives}{%
+\section{Access files, directories and drives}\label{access-files-directories-and-drives}}
+
+\hypertarget{create-files-and-directories}{%
+\section{Create files and directories}\label{create-files-and-directories}}
+
+\hypertarget{write-a-simple}{%
+\section{Write a simple}\label{write-a-simple}}
+
+\hypertarget{introduction-to-object-relationship}{%
+\section{Introduction to object relationship}\label{introduction-to-object-relationship}}
 
   \bibliography{book.bib,packages.bib}
 
