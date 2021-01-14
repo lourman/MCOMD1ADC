@@ -3,6 +3,7 @@ fig:unnamed-chunk-4
 recap
 module-structure
 revision
+creating-or-opening-an-application
 software-development
 software-development-lifecycle
 intellectual-property

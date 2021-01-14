@@ -6,6 +6,7 @@
 The purpose of revision is not just to remember what you have done previously. Revision helps you understand what you could not on a first pass of a material, it helps you identify concepts and material you did not see before, it helps you deepen your knowledge on a subject matter and of course it helps you remember.
 
 You have now used visual studio as an IDE for a few months now. How well do you think you know it?
+
 ### Creating or opening an application
 How would you create an application what do you need to know before you create one?
 
