@@ -1,3 +1,5 @@
+fig:unnamed-chunk-3
+fig:unnamed-chunk-4
 recap
 module-structure
 revision
@@ -6,7 +8,10 @@ software-development-lifecycle
 intellectual-property
 referencing
 version-control
+client-based-model
+distributed-based-model
 git-and-github
+beyond-source-code
 memory-and-intorduction-to-classes
 heap-and-stack
 classes
