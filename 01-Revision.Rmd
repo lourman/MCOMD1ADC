@@ -30,18 +30,68 @@ Try and remember how many times have you lost work that you wish you have backed
 In this module you will learn how to use one of the most popular version control tool. Before we go on to play and start creating or obtaining repositories let us see the types of repositories that exist.
 
 ### Client based model
-A single repository exists that users connect and exchange information. The repository is centralised and all repository functions are done centrally. The users connect and obtain a working copy of the repo. The users have the ability to change the source files but any changes to the repository would need to be communicated directly to the central repository.
+A single repository exists that users connect and exchange information. The repository is centralised and all repository functions are done centrally. The users connect and obtain a **part** of the working copy of the repo. The users have the ability to change the source files but any changes to the repository would need to be communicated directly to the central repository.
 
 ```{r, out.width='60%', fig.align='center', fig.cap='Client data model', echo=FALSE}
 knitr::include_graphics('images/Client Data Model Example.png')
 ```
 
 ### Distributed based model
-
+Each user has a working **full** copy of the repository. Each user can make changes to the repository locally and thus work offline if required. Once back online the users can distribute all changes to the repository where all users would then have access to view.  
 ```{r, out.width='60%', fig.align='center', fig.cap='Distributed data model', echo=FALSE}
 knitr::include_graphics('images/Distributed Data Model Example.png')
 ```
 
 ##	Git and GitHub
+Git is a distributed version control system that has approximately 90% usage in the industry. The main reason of its popularity is its performance compared to its competitors. It provides an outstanding flexibility and security and everything is inbuilt and free.
+In addition to Git advantages, because of its popularity there are many third party software tools and services that have integrated with Git including IDEs such as visual studio, issue and project tracking software, such as Jira, and code hosting services like GitHub.
+
+### How does Git Work
+
+To start understanding what git provides let us look at the following scenario:
+
+A software application is being developed and it is currently in version 1.5 and the developers are working on version 2.0.
+Eventually the development finishes and version 2.0 is released. A customer though does not want to go to version 2.0 as they do not have a budget to support the update, but they would like a feature that they have seen in version 2.0 to be included in their version of their software (1.5). 
+
+The developers only have to go to Git history and "copy" the required change associated with the feature needed and add it to the release version of 1.5 and thus create a new release 1.5.1.
+No new code really needed to be developed for what the customer needed.
+
+From this example you can see that Git offers flexibility to control your changes and releases without time constraints. 
+
+Let us look at the most common commands that you can issue to git.
+
+**config**
+
+**init**
+
+**clone**
+
+**add**
+
+**commit**
+
+**diff**
+
+**stash**
+
+**status**
+
+**clean**
+
+**push**
 
 ### Beyond Source Code
+You are a student and a member of a group that is working on a group assignment set by Gordon. You have two progress checks to pass before your final submission.
+Each member of the group needs to do certain aspects of the assignment but each depends on a part of each others work in order to be able to complete your parts.
+You make changes to your group assignment, adding some files for the upcoming progress check of your assignment, then **commit** and **push** those changes with descriptive messages in order for your fellow students in your group to be able to do their parts. You then work on a second part of your assignment that is required only for the end report and **commit** those changes too. As you have committed these separately they are also stored separately in the version history of your Git repo. 
+
+Another member of the group is having issues with a part of the assignment that is needed to be submitted in the progress check. You decided to help them out so you **pull** the latest repository and fix some of the issues your fellow student has and **commit** and **push**. The other student can then **pull** the latest and finish his task. Once all students of the group finish the
+all their changes they **commit** and **push** at their own time and the end product is complete. 
+
+When marking Gordon is able to see the **log** and understand how much work everyone has done and how valuable you have been on the team by looking at the **commits** you have done.
+
+At some point in the near future you complete your degree and you are being interviewed for a position in a company. 
+The interviewer asks if you have done something similar to the group assignment that Gordon had set several year ago. You answer "yes" and share your repo which resides in your GitHub account.
+Another candidate has similar experience but has never used Git or GitHub and thus they cannot share any of their work.
+
+Although you and the other candidate have similar experience and knowledge you get the job just because you can easily show and demonstrate your work. That is all that it takes sometimes to gain or lose a work position.

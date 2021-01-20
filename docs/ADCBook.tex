@@ -113,7 +113,7 @@
 
 \title{Application Development MCOMD1ADC}
 \author{Dr.~Alexios Louridas}
-\date{2021-01-14}
+\date{2021-01-20}
 
 \begin{document}
 \maketitle
@@ -122,9 +122,9 @@
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
-\hypertarget{intorduction}{%
-\chapter*{Intorduction}\label{intorduction}}
-\addcontentsline{toc}{chapter}{Intorduction}
+\hypertarget{introduction}{%
+\chapter*{Introduction}\label{introduction}}
+\addcontentsline{toc}{chapter}{Introduction}
 
 This is a \emph{sample} book written in \textbf{Markdown}. You can use anything that Pandoc's Markdown supports, e.g., a math equation \(a^2 + b^2 = c^2\).
 
@@ -187,7 +187,7 @@ In this module you will learn how to use one of the most popular version control
 \hypertarget{client-based-model}{%
 \subsection{Client based model}\label{client-based-model}}
 
-A single repository exists that users connect and exchange information. The repository is centralised and all repository functions are done centrally. The users connect and obtain a working copy of the repo. The users have the ability to change the source files but any changes to the repository would need to be communicated directly to the central repository.
+A single repository exists that users connect and exchange information. The repository is centralised and all repository functions are done centrally. The users connect and obtain a \textbf{part} of the working copy of the repo. The users have the ability to change the source files but any changes to the repository would need to be communicated directly to the central repository.
 
 \begin{figure}
 
@@ -201,6 +201,8 @@ A single repository exists that users connect and exchange information. The repo
 \hypertarget{distributed-based-model}{%
 \subsection{Distributed based model}\label{distributed-based-model}}
 
+Each user has a working \textbf{full} copy of the repository. Each user can make changes to the repository locally and thus work offline if required. Once back online the users can distribute all changes to the repository where all users would then have access to view.\\
+
 \begin{figure}
 
 {\centering \includegraphics[width=0.6\linewidth]{images/Distributed Data Model Example} 
@@ -213,8 +215,61 @@ A single repository exists that users connect and exchange information. The repo
 \hypertarget{git-and-github}{%
 \section{Git and GitHub}\label{git-and-github}}
 
+Git is a distributed version control system that has approximately 90\% usage in the industry. The main reason of its popularity is its performance compared to its competitors. It provides an outstanding flexibility and security and everything is inbuilt and free.
+In addition to Git advantages, because of its popularity there are many third party software tools and services that have integrated with Git including IDEs such as visual studio, issue and project tracking software, such as Jira, and code hosting services like GitHub.
+
+\hypertarget{how-does-git-work}{%
+\subsection{How does Git Work}\label{how-does-git-work}}
+
+To start understanding what git provides let us look at the following scenario:
+
+A software application is being developed and it is currently in version 1.5 and the developers are working on version 2.0.
+Eventually the development finishes and version 2.0 is released. A customer though does not want to go to version 2.0 as they do not have a budget to support the update, but they would like a feature that they have seen in version 2.0 to be included in their version of their software (1.5).
+
+The developers only have to go to Git history and ``copy'' the required change associated with the feature needed and add it to the release version of 1.5 and thus create a new release 1.5.1.
+No new code really needed to be developed for what the customer needed.
+
+From this example you can see that Git offers flexibility to control your changes and releases without time constraints.
+
+Let us look at the most common commands that you can issue to git.
+
+\textbf{config}
+
+\textbf{init}
+
+\textbf{clone}
+
+\textbf{add}
+
+\textbf{commit}
+
+\textbf{diff}
+
+\textbf{stash}
+
+\textbf{status}
+
+\textbf{clean}
+
+\textbf{push}
+
 \hypertarget{beyond-source-code}{%
 \subsection{Beyond Source Code}\label{beyond-source-code}}
+
+You are a student and a member of a group that is working on a group assignment set by Gordon. You have two progress checks to pass before your final submission.
+Each member of the group needs to do certain aspects of the assignment but each depends on a part of each others work in order to be able to complete your parts.
+You make changes to your group assignment, adding some files for the upcoming progress check of your assignment, then \textbf{commit} and \textbf{push} those changes with descriptive messages in order for your fellow students in your group to be able to do their parts. You then work on a second part of your assignment that is required only for the end report and \textbf{commit} those changes too. As you have committed these separately they are also stored separately in the version history of your Git repo.
+
+Another member of the group is having issues with a part of the assignment that is needed to be submitted in the progress check. You decided to help them out so you \textbf{pull} the latest repository and fix some of the issues your fellow student has and \textbf{commit} and \textbf{push}. The other student can then \textbf{pull} the latest and finish his task. Once all students of the group finish the
+all their changes they \textbf{commit} and \textbf{push} at their own time and the end product is complete.
+
+When marking Gordon is able to see the \textbf{log} and understand how much work everyone has done and how valuable you have been on the team by looking at the \textbf{commits} you have done.
+
+At some point in the near future you complete your degree and you are being interviewed for a position in a company.
+The interviewer asks if you have done something similar to the group assignment that Gordon had set several year ago. You answer ``yes'' and share your repo which resides in your GitHub account.
+Another candidate has similar experience but has never used Git or GitHub and thus they cannot share any of their work.
+
+Although you and the other candidate have similar experience and knowledge you get the job just because you can easily show and demonstrate your work. That is all that it takes sometimes to gain or lose a work position.
 
 \hypertarget{memory-and-intorduction-to-classes}{%
 \chapter{Memory and Intorduction to Classes}\label{memory-and-intorduction-to-classes}}

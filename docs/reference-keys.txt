@@ -12,6 +12,7 @@ version-control
 client-based-model
 distributed-based-model
 git-and-github
+how-does-git-work
 beyond-source-code
 memory-and-intorduction-to-classes
 heap-and-stack
