@@ -12,7 +12,7 @@ description: "This is a minimal example of using the bookdown package to write a
 
 # Introduction {-}
 
-## Module Structure 
+## Module Structure {-}
 
 We are going to have 12 weeks of teaching. What we would like at the end of this module is for you to be able to create a software application from scratch. From an idea to developing and maintaining it.
 
@@ -29,9 +29,9 @@ knitr::kable(c,
 )
 ```
 
-## Assignment
+## Assignment {-}
 
-##	Version Control
+##	A. Version Control {-}
 While developing software, development teams use tools to help them reduce development times and produce more stable and better solutions.
 The most popular of these are version control or source control tools. The aim of these tools is to keep a record of all changes that happen on the source code of an application or applications being developed.
 
@@ -41,20 +41,26 @@ Try and remember how many times have you lost work that you wish you have backed
 
 In this module you will learn how to use one of the most popular version control tool. Before we go on to play and start creating or obtaining repositories let us see the types of repositories that exist.
 
-### Client based model
+### Local based model {-}
+The simplest way of having version control is to keep multiple copies of the same file at different stages of its development. You try to keep versions by changing the filename appropriately or keeping track of the last time modified. Although, simple it is associated with a lot of errors and space consuming. 
+
+To improve this method some decided to create a small database to track changes of the files under version control.
+If you know a version control system called RCS you probably are a bit older. This system kept the database on a special section of your hard drive, thus at any time being able to go back and recreate the files at specific times.
+
+### Client based model or centralised systems{-}
 A single repository exists that users connect and exchange information. The repository is centralised and all repository functions are done centrally. The users connect and obtain a **part** of the working copy of the repo. The users have the ability to change the source files but any changes to the repository would need to be communicated directly to the central repository.
 
 ```{r, out.width='60%', fig.align='center', fig.cap='Client data model', echo=FALSE}
 knitr::include_graphics('images/Client Data Model Example.png')
 ```
 
-### Distributed based model
+### Distributed based model {-}
 Each user has a working **full** copy of the repository. Each user can make changes to the repository locally and thus work offline if required. Once back online the users can distribute all changes to the repository where all users would then have access to view.  
 ```{r, out.width='60%', fig.align='center', fig.cap='Distributed data model', echo=FALSE}
 knitr::include_graphics('images/Distributed Data Model Example.png')
 ```
 
-##	Git and GitHub
+## B.	Git and GitHub
 Git is a distributed version control system that has approximately 90% usage in the industry. The main reason of its popularity is its performance compared to its competitors. It provides an outstanding flexibility and security and everything is inbuilt and free.
 In addition to Git advantages, because of its popularity there are many third party software tools and services that have integrated with Git including IDEs such as visual studio, issue and project tracking software, such as Jira, and code hosting services like GitHub.
 
