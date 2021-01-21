@@ -87,11 +87,32 @@ The central store can either be a dedicated server that we have access and full 
 As a university student you have access to GitHub.
 
 
-#### Git in reality
+#### Start using Git
 
-First and foremost we need to install Git in our computer. 
-It is time to start looking at 
+First and foremost we need to install Git in our computer. Download the latest Git Version from:
 
+https://git-scm.com/downloads
+
+When you've successfully started the installer, you should see the Git Setup wizard screen. Follow the Next and Finish prompts to complete the installation. The default options are sensible for most users.
+
+Run the Git Command Prompt (Git CMD) or Git Bash depending on installation
+
+```{r, out.width='60%', fig.align='center', fig.cap='Run Git Enviroment', echo=FALSE}
+knitr::include_graphics('images/Git folder.png')
+```
+
+To run any command in git you require to write $git$ followed by a space and the git command, followed by any required command requirements.
+
+```
+git <<git command>> <<git command parameters>>
+
+```
+
+To configure Git with your preferences you would require to run the command $config$. So run the following commands using YOUR NAME and YOUR UNIVERSITY EMAIL to setup your git installation.
+
+```{r, out.width='80%', fig.align='center', fig.cap='Run Git Enviroment', echo=FALSE}
+knitr::include_graphics('images/Git init.png')
+```
 **config**
 
 **init**
