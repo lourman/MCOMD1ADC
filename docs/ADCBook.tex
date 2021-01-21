@@ -41,46 +41,6 @@
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
-\usepackage{color}
-\usepackage{fancyvrb}
-\newcommand{\VerbBar}{|}
-\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
-% Add ',fontsize=\small' for more characters per line
-\usepackage{framed}
-\definecolor{shadecolor}{RGB}{248,248,248}
-\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
-\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
-\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\BuiltInTok}[1]{#1}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
-\newcommand{\ExtensionTok}[1]{#1}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ImportTok}[1]{#1}
-\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\NormalTok}[1]{#1}
-\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\RegionMarkerTok}[1]{#1}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \usepackage{longtable,booktabs}
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
@@ -113,7 +73,7 @@
 
 \title{Application Development MCOMD1ADC}
 \author{Dr.~Alexios Louridas}
-\date{2021-01-20}
+\date{2021-01-21}
 
 \begin{document}
 \maketitle
@@ -126,51 +86,52 @@
 \chapter*{Introduction}\label{introduction}}
 \addcontentsline{toc}{chapter}{Introduction}
 
-This is a \emph{sample} book written in \textbf{Markdown}. You can use anything that Pandoc's Markdown supports, e.g., a math equation \(a^2 + b^2 = c^2\).
-
-The \textbf{bookdown} package can be installed from CRAN or Github:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{install.packages}\NormalTok{(}\StringTok{"bookdown"}\NormalTok{)}
-\CommentTok{# or the development version}
-\CommentTok{# devtools::install_github("rstudio/bookdown")}
-\end{Highlighting}
-\end{Shaded}
-
-Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading \texttt{\#}.
-
-To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): \url{https://yihui.org/tinytex/}.
-
-\hypertarget{recap}{%
-\chapter{Recap}\label{recap}}
-
 \hypertarget{module-structure}{%
 \section{Module Structure}\label{module-structure}}
 
-\hypertarget{revision}{%
-\section{Revision}\label{revision}}
+We are going to have 12 weeks of teaching. What we would like at the end of this module is for you to be able to create a software application from scratch. From an idea to developing and maintaining it.
 
-The purpose of revision is not just to remember what you have done previously. Revision helps you understand what you could not on a first pass of a material, it helps you identify concepts and material you did not see before, it helps you deepen your knowledge on a subject matter and of course it helps you remember.
+To achieve this we are going to introduce tools that would help you in developing software followed by introducing concepts to help you organise your ideas. We then going to look at developing the application front end(graphical user interface) and back end. Last you will be introduced to testing and application management for easy maintaining your software application.
 
-You have now used visual studio as an IDE for a few months now. How well do you think you know it?
+The indicative schedule we are going to follow can be seen in table 0.1. Although we shall try and follow this schedule it all depends on you. If you believe that you need an extra session to desribe and master something then we are here to listen. Please tell us and we shall try to change it accordingly.
 
-\hypertarget{creating-or-opening-an-application}{%
-\subsection{Creating or opening an application}\label{creating-or-opening-an-application}}
+\begin{table}
 
-How would you create an application what do you need to know before you create one?
+\caption{\label{tab:unnamed-chunk-1}Indicative Content Schedule.}
+\centering
+\begin{tabular}[t]{c|c}
+\hline
+Session & Indicative Content\\
+\hline
+0 & Version Control\\
+\hline
+1 & Revision\\
+\hline
+2 & Introduction to Classes - Basics\\
+\hline
+3 & Arrays and Collections\\
+\hline
+4 & Objects and Structures\\
+\hline
+5 & Algorithms\\
+\hline
+6 & GUI and Forms\\
+\hline
+7 & Methods Again\\
+\hline
+8 & Errors and Exceptions\\
+\hline
+9 & Testing and Data Validation\\
+\hline
+10 & File System\\
+\hline
+11 & Summary and Revision\\
+\hline
+\end{tabular}
+\end{table}
 
-\hypertarget{software-development}{%
-\section{Software Development}\label{software-development}}
-
-\hypertarget{software-development-lifecycle}{%
-\subsection{Software Development Lifecycle}\label{software-development-lifecycle}}
-
-\hypertarget{intellectual-property}{%
-\subsection{Intellectual Property}\label{intellectual-property}}
-
-\hypertarget{referencing}{%
-\subsection{Referencing}\label{referencing}}
+\hypertarget{assignment}{%
+\section{Assignment}\label{assignment}}
 
 \hypertarget{version-control}{%
 \section{Version Control}\label{version-control}}
@@ -195,7 +156,7 @@ A single repository exists that users connect and exchange information. The repo
 
 }
 
-\caption{Client data model}\label{fig:unnamed-chunk-3}
+\caption{Client data model}\label{fig:unnamed-chunk-2}
 \end{figure}
 
 \hypertarget{distributed-based-model}{%
@@ -209,7 +170,7 @@ Each user has a working \textbf{full} copy of the repository. Each user can make
 
 }
 
-\caption{Distributed data model}\label{fig:unnamed-chunk-4}
+\caption{Distributed data model}\label{fig:unnamed-chunk-3}
 \end{figure}
 
 \hypertarget{git-and-github}{%
@@ -270,6 +231,33 @@ The interviewer asks if you have done something similar to the group assignment 
 Another candidate has similar experience but has never used Git or GitHub and thus they cannot share any of their work.
 
 Although you and the other candidate have similar experience and knowledge you get the job just because you can easily show and demonstrate your work. That is all that it takes sometimes to gain or lose a work position.
+
+\hypertarget{recap}{%
+\chapter{Recap}\label{recap}}
+
+\hypertarget{revision}{%
+\section{Revision}\label{revision}}
+
+The purpose of revision is not just to remember what you have done previously. Revision helps you understand what you could not on a first pass of a material, it helps you identify concepts and material you did not see before, it helps you deepen your knowledge on a subject matter and of course it helps you remember.
+
+You have now used visual studio as an IDE for a few months now. How well do you think you know it?
+
+\hypertarget{creating-or-opening-an-application}{%
+\subsection{Creating or opening an application}\label{creating-or-opening-an-application}}
+
+How would you create an application what do you need to know before you create one?
+
+\hypertarget{software-development}{%
+\section{Software Development}\label{software-development}}
+
+\hypertarget{software-development-lifecycle}{%
+\subsection{Software Development Lifecycle}\label{software-development-lifecycle}}
+
+\hypertarget{intellectual-property}{%
+\subsection{Intellectual Property}\label{intellectual-property}}
+
+\hypertarget{referencing}{%
+\subsection{Referencing}\label{referencing}}
 
 \hypertarget{memory-and-intorduction-to-classes}{%
 \chapter{Memory and Intorduction to Classes}\label{memory-and-intorduction-to-classes}}
