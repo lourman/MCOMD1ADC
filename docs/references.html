@@ -71,15 +71,16 @@
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a><ul>
-<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#module-structure"><i class="fa fa-check"></i><b>0.1</b> Module Structure</a></li>
-<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#assignment"><i class="fa fa-check"></i><b>0.2</b> Assignment</a></li>
-<li class="chapter" data-level="0.3" data-path="index.html"><a href="index.html#version-control"><i class="fa fa-check"></i><b>0.3</b> Version Control</a><ul>
-<li class="chapter" data-level="0.3.1" data-path="index.html"><a href="index.html#client-based-model"><i class="fa fa-check"></i><b>0.3.1</b> Client based model</a></li>
-<li class="chapter" data-level="0.3.2" data-path="index.html"><a href="index.html#distributed-based-model"><i class="fa fa-check"></i><b>0.3.2</b> Distributed based model</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#module-structure"><i class="fa fa-check"></i>Module Structure</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#assignment"><i class="fa fa-check"></i>Assignment</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#a.-version-control"><i class="fa fa-check"></i>A. Version Control</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#local-based-model"><i class="fa fa-check"></i>Local based model</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#client-based-model-or-centralised-systems"><i class="fa fa-check"></i>Client based model or centralised systems</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#distributed-based-model"><i class="fa fa-check"></i>Distributed based model</a></li>
 </ul></li>
-<li class="chapter" data-level="0.4" data-path="index.html"><a href="index.html#git-and-github"><i class="fa fa-check"></i><b>0.4</b> Git and GitHub</a><ul>
-<li class="chapter" data-level="0.4.1" data-path="index.html"><a href="index.html#how-does-git-work"><i class="fa fa-check"></i><b>0.4.1</b> How does Git Work</a></li>
-<li class="chapter" data-level="0.4.2" data-path="index.html"><a href="index.html#beyond-source-code"><i class="fa fa-check"></i><b>0.4.2</b> Beyond Source Code</a></li>
+<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#b.-git-and-github"><i class="fa fa-check"></i><b>0.1</b> B. Git and GitHub</a><ul>
+<li class="chapter" data-level="0.1.1" data-path="index.html"><a href="index.html#how-does-git-work"><i class="fa fa-check"></i><b>0.1.1</b> How does Git Work</a></li>
+<li class="chapter" data-level="0.1.2" data-path="index.html"><a href="index.html#beyond-source-code"><i class="fa fa-check"></i><b>0.1.2</b> Beyond Source Code</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="recap.html"><a href="recap.html"><i class="fa fa-check"></i><b>1</b> Recap</a><ul>
@@ -219,6 +220,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

@@ -87,13 +87,14 @@
 \addcontentsline{toc}{chapter}{Introduction}
 
 \hypertarget{module-structure}{%
-\section{Module Structure}\label{module-structure}}
+\section*{Module Structure}\label{module-structure}}
+\addcontentsline{toc}{section}{Module Structure}
 
 We are going to have 12 weeks of teaching. What we would like at the end of this module is for you to be able to create a software application from scratch. From an idea to developing and maintaining it.
 
 To achieve this we are going to introduce tools that would help you in developing software followed by introducing concepts to help you organise your ideas. We then going to look at developing the application front end(graphical user interface) and back end. Last you will be introduced to testing and application management for easy maintaining your software application.
 
-The indicative schedule we are going to follow can be seen in table 0.1. Although we shall try and follow this schedule it all depends on you. If you believe that you need an extra session to desribe and master something then we are here to listen. Please tell us and we shall try to change it accordingly.
+The indicative schedule we are going to follow can be seen in table 0.1. Although we shall try and follow this schedule it all depends on you. If you believe that you need an extra session to describe and master something then we are here to listen. Please tell us and we shall try to change it accordingly.
 
 \begin{table}
 
@@ -131,22 +132,34 @@ Session & Indicative Content\\
 \end{table}
 
 \hypertarget{assignment}{%
-\section{Assignment}\label{assignment}}
+\section*{Assignment}\label{assignment}}
+\addcontentsline{toc}{section}{Assignment}
 
-\hypertarget{version-control}{%
-\section{Version Control}\label{version-control}}
+\hypertarget{a.-version-control}{%
+\section*{A. Version Control}\label{a.-version-control}}
+\addcontentsline{toc}{section}{A. Version Control}
 
 While developing software, development teams use tools to help them reduce development times and produce more stable and better solutions.
 The most popular of these are version control or source control tools. The aim of these tools is to keep a record of all changes that happen on the source code of an application or applications being developed.
 
-A version control tool keeps a record of all changes while recording the person or team responsible, the time of a change and the content that has been altered. All of these are recorded in a specialised database usually called a repository or repo for short, that can be accessed at any point to review code and provide a fix or an addition to the source code by identifying the best place, time and/or person to do so.
+A version control tool keeps a record of all changes while recording the person or team responsible, the time of a change and the content that has been altered. All of these are recorded in a specialised database usually called a \textbf{repository} or repo for short, that can be accessed at any point to review code and provide a fix or an addition to the source code by identifying the best place, time and/or person to do so.
 
 Try and remember how many times have you lost work that you wish you have backed up or you have but you do not remember where it is located, or you have not backed up as frequently as you would have wanted with the specific change you are looking. All of these cases would disappear or be minimised by using a version control tool and having a repository to store all your changes.
 
 In this module you will learn how to use one of the most popular version control tool. Before we go on to play and start creating or obtaining repositories let us see the types of repositories that exist.
 
-\hypertarget{client-based-model}{%
-\subsection{Client based model}\label{client-based-model}}
+\hypertarget{local-based-model}{%
+\subsection*{Local based model}\label{local-based-model}}
+\addcontentsline{toc}{subsection}{Local based model}
+
+The simplest way of having version control is to keep multiple copies of the same file at different stages of its development. You try to keep versions by changing the filename appropriately or keeping track of the last time modified. Although, simple it is associated with a lot of errors and large disk space.
+
+To improve this method some decided to create a small database to track changes of the files under version control.
+If you know a version control system called RCS you probably are a bit older. This system kept the database on a special section of your hard drive, thus at any point you wer able to go back and recreate the files at specific times.
+
+\hypertarget{client-based-model-or-centralised-systems}{%
+\subsection*{Client based model or centralised systems}\label{client-based-model-or-centralised-systems}}
+\addcontentsline{toc}{subsection}{Client based model or centralised systems}
 
 A single repository exists that users connect and exchange information. The repository is centralised and all repository functions are done centrally. The users connect and obtain a \textbf{part} of the working copy of the repo. The users have the ability to change the source files but any changes to the repository would need to be communicated directly to the central repository.
 
@@ -159,8 +172,11 @@ A single repository exists that users connect and exchange information. The repo
 \caption{Client data model}\label{fig:unnamed-chunk-2}
 \end{figure}
 
+One of the main disadvantage of these system is that it has a single point of failure. If the server that contains the repository goes down then collaboration and version control does not work arnymore.
+
 \hypertarget{distributed-based-model}{%
-\subsection{Distributed based model}\label{distributed-based-model}}
+\subsection*{Distributed based model}\label{distributed-based-model}}
+\addcontentsline{toc}{subsection}{Distributed based model}
 
 Each user has a working \textbf{full} copy of the repository. Each user can make changes to the repository locally and thus work offline if required. Once back online the users can distribute all changes to the repository where all users would then have access to view.\\
 
@@ -173,8 +189,8 @@ Each user has a working \textbf{full} copy of the repository. Each user can make
 \caption{Distributed data model}\label{fig:unnamed-chunk-3}
 \end{figure}
 
-\hypertarget{git-and-github}{%
-\section{Git and GitHub}\label{git-and-github}}
+\hypertarget{b.-git-and-github}{%
+\section{B. Git and GitHub}\label{b.-git-and-github}}
 
 Git is a distributed version control system that has approximately 90\% usage in the industry. The main reason of its popularity is its performance compared to its competitors. It provides an outstanding flexibility and security and everything is inbuilt and free.
 In addition to Git advantages, because of its popularity there are many third party software tools and services that have integrated with Git including IDEs such as visual studio, issue and project tracking software, such as Jira, and code hosting services like GitHub.
@@ -192,7 +208,21 @@ No new code really needed to be developed for what the customer needed.
 
 From this example you can see that Git offers flexibility to control your changes and releases without time constraints.
 
-Let us look at the most common commands that you can issue to git.
+\hypertarget{how-does-a-git-repository-work}{%
+\subsubsection{How does a Git repository work?}\label{how-does-a-git-repository-work}}
+
+The database that contains all the information of the files we want to include for tracking their version and changes is called the repository. The repository in Git is stored in the folder \(.git\). If you delete the folder you would lose all the history of this repository. On the other hand it does not mean that you have deleted the repository, as it is stored centrally but also to other users hardware who might have copied the repository.
+
+As a repository is created there are no files associated initially with it so there is really nothing to track. So we need to add files to the repository. Once they are added they are now being tracked. If we now modify a file in our computer that is part of a repository it is in a state of \(modified\) for Git. If we want these changes to be included in our repository we need to flag them and place them in a state usually called \(staged\). Once the file is in the staged state we can tell our repository to update the file accordingly inside our repository. The file is then in the \(committed\) state.\\
+Although that is all done and we have included the modified file in the repository it does not mean that everyone can see it. We need to make sure that we flag our repository has changed to other users. To accomplish this we need to \(push\) our new repository to the central store.
+The central store can either be a dedicated server that we have access and full control over or we can use a web service that allows us to store our repositories. Such a web service is GitHub.
+As a university student you have access to GitHub.
+
+\hypertarget{git-in-reality}{%
+\subsubsection{Git in reality}\label{git-in-reality}}
+
+First and foremost we need to install Git in our computer.
+It is time to start looking at
 
 \textbf{config}
 

@@ -1,13 +1,10 @@
 tab:unnamed-chunk-1
 fig:unnamed-chunk-2
 fig:unnamed-chunk-3
-module-structure
-assignment
-version-control
-client-based-model
-distributed-based-model
-git-and-github
+b.-git-and-github
 how-does-git-work
+how-does-a-git-repository-work
+git-in-reality
 beyond-source-code
 recap
 revision
