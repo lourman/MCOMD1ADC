@@ -62,23 +62,23 @@ Each user has a working **full** copy of the repository. Each user can make chan
 knitr::include_graphics('images/Distributed Data Model Example.png')
 ```
 
-## B.	Git and GitHub
+## B.	Git and GitHub {-}
 Git is a distributed version control system that has approximately 90% usage in the industry. The main reason of its popularity is its performance compared to its competitors. It provides an outstanding flexibility and security and everything is inbuilt and free.
 In addition to Git advantages, because of its popularity there are many third party software tools and services that have integrated with Git including IDEs such as visual studio, issue and project tracking software, such as Jira, and code hosting services like GitHub.
 
-### How does Git Work
+### How does Git Work {-}
 
 To start understanding what git provides let us look at the following scenario:
-
+```{example}
 A software application is being developed and it is currently in version 1.5 and the developers are working on version 2.0.
 Eventually the development finishes and version 2.0 is released. A customer though does not want to go to version 2.0 as they do not have a budget to support the update, but they would like a feature that they have seen in version 2.0 to be included in their version of their software (1.5). 
 
 The developers only have to go to Git history and "copy" the required change associated with the feature needed and add it to the release version of 1.5 and thus create a new release 1.5.1.
 No new code really needed to be developed for what the customer needed.
-
+```
 From this example you can see that Git offers flexibility to control your changes and releases without time constraints. 
 
-#### How does a Git repository work?
+#### How does a Git repository work? {-}
 The database that contains all the information of the files we want to include for tracking their version and changes is called the repository. The repository in Git is stored in the folder $.git$. If you delete the folder you would lose all the history of this repository. On the other hand it does not mean that you have deleted the repository, as it is stored centrally but also to other users hardware who might have copied the repository. 
 
 As a repository is created there are no files associated initially with it so there is really nothing to track. So we need to add files to the repository. Once they are added they are now being tracked. If we now modify a file in our computer that is part of a repository it is in a state of $modified$ for Git. If we want these changes to be included in our repository we need to flag them and place them in a state usually called $staged$. Once the file is in the staged state we can tell our repository to update the file accordingly inside our repository. The file is then in the $committed$ state.  
@@ -87,7 +87,7 @@ The central store can either be a dedicated server that we have access and full 
 As a university student you have access to GitHub.
 
 
-#### Start using Git
+#### Start using Git {-}
 
 First and foremost we need to install Git in our computer. Download the latest Git Version from:
 
@@ -101,6 +101,18 @@ Run the Git Command Prompt (Git CMD) or Git Bash depending on installation
 knitr::include_graphics('images/Git folder.png')
 ```
 
+Personally I prefer running Git Bash as bash is one of the most famous and used shell.
+I have summarised The usual commands for bash that you would probably need for running git commands in the table below.
+
+```{r echo = FALSE}
+c<- matrix(c("pwd","mkdir ex_dir","cd ex_dir","cd ..","ls","Show current directory","make directory ex_dir","Change directory to ex_dir","Go up a directory level","list all files in the current directory"),ncol=2)
+colnames(c) <- c("Command","Operation")
+
+knitr::kable(c,
+  caption = 'Bash Most Common Commands.',align = "cc", booktabs = FALSE
+)
+```
+
 To run any command in git you require to write $git$ followed by a space and the git command, followed by any required command requirements.
 
 ```
@@ -108,14 +120,21 @@ git <<git command>> <<git command parameters>>
 
 ```
 
-To configure Git with your preferences you would require to run the command $config$. So run the following commands using YOUR NAME and YOUR UNIVERSITY EMAIL to setup your git installation.
-
-```{r, out.width='80%', fig.align='center', fig.cap='Run Git Enviroment', echo=FALSE}
-knitr::include_graphics('images/Git init.png')
-```
 **config**
 
+```{exercise, name="Configuring Git"}
+To configure Git with your preferences you would require to run the command $config$. So run the following commands using YOUR NAME and YOUR UNIVERSITY EMAIL to setup your git installation.
+```
+
+```{r, out.width='80%', fig.align='center', fig.cap='Config command example', echo=FALSE}
+knitr::include_graphics('images/Git init.png')
+```
+
+
 **init**
+```{exercise, name="Creating a Git Repository"}
+
+'''
 
 **clone**
 
@@ -133,7 +152,11 @@ knitr::include_graphics('images/Git init.png')
 
 **push**
 
-### Beyond Source Code
+### Beyond Source Code {-}
+The use of Git and GitHub does not have to stop on code only. As a student it can be a valuable tool for all of your assignments. I would recomend to start using these tools not only to famirialise yourself with the tool but also to get to know a community in GitHub and open source code. 
+Below is a simple example of how you can use it for group work in any assignment.
+
+```{example}
 You are a student and a member of a group that is working on a group assignment set by Gordon. You have two progress checks to pass before your final submission.
 Each member of the group needs to do certain aspects of the assignment but each depends on a part of each others work in order to be able to complete your parts.
 You make changes to your group assignment, adding some files for the upcoming progress check of your assignment, then **commit** and **push** those changes with descriptive messages in order for your fellow students in your group to be able to do their parts. You then work on a second part of your assignment that is required only for the end report and **commit** those changes too. As you have committed these separately they are also stored separately in the version history of your Git repo. 
@@ -148,3 +171,4 @@ The interviewer asks if you have done something similar to the group assignment 
 Another candidate has similar experience but has never used Git or GitHub and thus they cannot share any of their work.
 
 Although you and the other candidate have similar experience and knowledge you get the job just because you can easily show and demonstrate your work. That is all that it takes sometimes to gain or lose a work position.
+```
