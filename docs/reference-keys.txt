@@ -1,13 +1,9 @@
 tab:unnamed-chunk-1
 fig:unnamed-chunk-2
 fig:unnamed-chunk-3
-exm:unnamed-chunk-4
-fig:unnamed-chunk-5
-tab:unnamed-chunk-6
-exr:unnamed-chunk-7
-fig:unnamed-chunk-8
-exr:unnamed-chunk-9
-exm:unnamed-chunk-10
+fig:unnamed-chunk-4
+tab:unnamed-chunk-5
+fig:unnamed-chunk-6
 recap
 revision
 creating-or-opening-an-application

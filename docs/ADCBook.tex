@@ -75,21 +75,6 @@
 \author{Dr.~Alexios Louridas}
 \date{2021-01-22}
 
-\usepackage{amsthm}
-\newtheorem{theorem}{Theorem}[chapter]
-\newtheorem{lemma}{Lemma}[chapter]
-\newtheorem{corollary}{Corollary}[chapter]
-\newtheorem{proposition}{Proposition}[chapter]
-\newtheorem{conjecture}{Conjecture}[chapter]
-\theoremstyle{definition}
-\newtheorem{definition}{Definition}[chapter]
-\theoremstyle{definition}
-\newtheorem{example}{Example}[chapter]
-\theoremstyle{definition}
-\newtheorem{exercise}{Exercise}[chapter]
-\theoremstyle{remark}
-\newtheorem*{remark}{Remark}
-\newtheorem*{solution}{Solution}
 \begin{document}
 \maketitle
 
@@ -216,13 +201,13 @@ In addition to Git advantages, because of its popularity there are many third pa
 \addcontentsline{toc}{subsection}{How does Git Work}
 
 To start understanding what git provides let us look at the following scenario:
-\begin{example}
-\protect\hypertarget{exm:unnamed-chunk-4}{}{\label{exm:unnamed-chunk-4} }A software application is being developed and it is currently in version 1.5 and the developers are working on version 2.0.
+
+A software application is being developed and it is currently in version 1.5 and the developers are working on version 2.0.
 Eventually the development finishes and version 2.0 is released. A customer though does not want to go to version 2.0 as they do not have a budget to support the update, but they would like a feature that they have seen in version 2.0 to be included in their version of their software (1.5).
 
 The developers only have to go to Git history and ``copy'' the required change associated with the feature needed and add it to the release version of 1.5 and thus create a new release 1.5.1.
 No new code really needed to be developed for what the customer needed.
-\end{example}
+
 From this example you can see that Git offers flexibility to control your changes and releases without time constraints.
 
 \hypertarget{how-does-a-git-repository-work}{%
@@ -254,15 +239,15 @@ Run the Git Command Prompt (Git CMD) or Git Bash depending on installation
 
 }
 
-\caption{Run Git Enviroment}\label{fig:unnamed-chunk-5}
+\caption{Run Git Enviroment}\label{fig:unnamed-chunk-4}
 \end{figure}
 
-Personally I prefer running Git Bash as bash is one of the most famous and used shell.
+Personally I prefer running Git Bash as bash is one of the most widely used shell.
 I have summarised The usual commands for bash that you would probably need for running git commands in the table below.
 
 \begin{table}
 
-\caption{\label{tab:unnamed-chunk-6}Bash Most Common Commands.}
+\caption{\label{tab:unnamed-chunk-5}Bash Most Common Commands.}
 \centering
 \begin{tabular}[t]{c|c}
 \hline
@@ -289,9 +274,7 @@ git <<git command>> <<git command parameters>>
 
 \textbf{config}
 
-\begin{exercise}[Configuring Git]
-\protect\hypertarget{exr:unnamed-chunk-7}{}{\label{exr:unnamed-chunk-7} \iffalse (Configuring Git) \fi{} }To configure Git with your preferences you would require to run the command \(config\). So run the following commands using YOUR NAME and YOUR UNIVERSITY EMAIL to setup your git installation.
-\end{exercise}
+To configure Git with your preferences you would require to run the command \(config\). So run the following commands using YOUR NAME and YOUR UNIVERSITY EMAIL to setup your git installation.
 
 \begin{figure}
 
@@ -299,29 +282,41 @@ git <<git command>> <<git command parameters>>
 
 }
 
-\caption{Config command example}\label{fig:unnamed-chunk-8}
+\caption{Config command example}\label{fig:unnamed-chunk-6}
 \end{figure}
 
-\textbf{init}
-\begin{exercise}[Creating a Git Repository]
-\protect\hypertarget{exr:unnamed-chunk-9}{}{\label{exr:unnamed-chunk-9} \iffalse (Creating a Git Repository) \fi{} }
-'''
+Before you can start creating and cloning repositories we need a place to store them. Lucky for you, Terry from IT has done a wonderful job and we all have access to GitHUb via our university credentials.
+
+DO NOT GO TO THE MAIN GITHUB WEBSITE INSTEAD GO TO:
+
+\url{http://github.canterbury.ac.uk}
+
+Use your university credentials to sign in and create an account. If you already have an account please either create a new account or add your university credentials to that account. Once you enter GitHub I shall assign you to the appropriate team/teams.
+
+\textbf{PLEASE use your whole name when creating your account}
+
+We now going to introduce you to the most usual git command:
 
 \textbf{clone}
 
-\textbf{add}
+This command will clone a repository. What that means is that you will download a working copy of a repository.
 
-\textbf{commit}
+Open Git Bash and go to a directory in your current machine that you wish to clone a repository.
+To change directory in Bash use the cd command.
+For example:
+\$ cd c:\textbackslash temp
+Git Bash informs you all the times your current directory. You will see that before your promt.
+Using Git Bash run the following command:
+\$ git clone \url{https://github.com/cccu-uk/MCOMD1ADC2021.git}"
 
-\textbf{diff}
+Congratulations you have cloned your first repository!
 
-\textbf{stash}
+Now that you have been setup to use GitHub and Git you are more than welcome to start playing around with creating your own private repositories and start learning a bit about git and github.
 
-\textbf{status}
+I would recommend to go to
+\url{https://try.github.io/}
 
-\textbf{clean}
-
-\textbf{push}
+Try and do as many of the tutorials as you can. Especially the section ``Learn by doing''.
 
 \hypertarget{beyond-source-code}{%
 \subsection*{Beyond Source Code}\label{beyond-source-code}}
@@ -329,9 +324,8 @@ git <<git command>> <<git command parameters>>
 
 The use of Git and GitHub does not have to stop on code only. As a student it can be a valuable tool for all of your assignments. I would recomend to start using these tools not only to famirialise yourself with the tool but also to get to know a community in GitHub and open source code.
 Below is a simple example of how you can use it for group work in any assignment.
-\end{exercise}
-\begin{example}
-\protect\hypertarget{exm:unnamed-chunk-10}{}{\label{exm:unnamed-chunk-10} }You are a student and a member of a group that is working on a group assignment set by Gordon. You have two progress checks to pass before your final submission.
+
+You are a student and a member of a group that is working on a group assignment set by Gordon. You have two progress checks to pass before your final submission.
 Each member of the group needs to do certain aspects of the assignment but each depends on a part of each others work in order to be able to complete your parts.
 You make changes to your group assignment, adding some files for the upcoming progress check of your assignment, then \textbf{commit} and \textbf{push} those changes with descriptive messages in order for your fellow students in your group to be able to do their parts. You then work on a second part of your assignment that is required only for the end report and \textbf{commit} those changes too. As you have committed these separately they are also stored separately in the version history of your Git repo.
 
@@ -345,7 +339,6 @@ The interviewer asks if you have done something similar to the group assignment 
 Another candidate has similar experience but has never used Git or GitHub and thus they cannot share any of their work.
 
 Although you and the other candidate have similar experience and knowledge you get the job just because you can easily show and demonstrate your work. That is all that it takes sometimes to gain or lose a work position.
-\end{example}
 
 \hypertarget{recap}{%
 \chapter{Recap}\label{recap}}

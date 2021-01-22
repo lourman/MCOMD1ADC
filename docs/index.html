@@ -80,6 +80,7 @@
 </ul></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#b.-git-and-github"><i class="fa fa-check"></i>B. Git and GitHub</a><ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-does-git-work"><i class="fa fa-check"></i>How does Git Work</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#beyond-source-code"><i class="fa fa-check"></i>Beyond Source Code</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="recap.html"><a href="recap.html"><i class="fa fa-check"></i><b>1</b> Recap</a><ul>
@@ -276,15 +277,11 @@ Figure 0.2: Distributed data model
 In addition to Git advantages, because of its popularity there are many third party software tools and services that have integrated with Git including IDEs such as visual studio, issue and project tracking software, such as Jira, and code hosting services like GitHub.</p>
 <div id="how-does-git-work" class="section level3 unnumbered">
 <h3>How does Git Work</h3>
-To start understanding what git provides let us look at the following scenario:
-
-<div class="example">
-<p><span id="exm:unnamed-chunk-4" class="example"><strong>Example 0.1  </strong></span>A software application is being developed and it is currently in version 1.5 and the developers are working on version 2.0.
+<p>To start understanding what git provides let us look at the following scenario:</p>
+<p>A software application is being developed and it is currently in version 1.5 and the developers are working on version 2.0.
 Eventually the development finishes and version 2.0 is released. A customer though does not want to go to version 2.0 as they do not have a budget to support the update, but they would like a feature that they have seen in version 2.0 to be included in their version of their software (1.5).</p>
-The developers only have to go to Git history and “copy” the required change associated with the feature needed and add it to the release version of 1.5 and thus create a new release 1.5.1.
-No new code really needed to be developed for what the customer needed.
-</div>
-
+<p>The developers only have to go to Git history and “copy” the required change associated with the feature needed and add it to the release version of 1.5 and thus create a new release 1.5.1.
+No new code really needed to be developed for what the customer needed.</p>
 <p>From this example you can see that Git offers flexibility to control your changes and releases without time constraints.</p>
 <div id="how-does-a-git-repository-work" class="section level4 unnumbered">
 <h4>How does a Git repository work?</h4>
@@ -300,16 +297,16 @@ As a university student you have access to GitHub.</p>
 <p><a href="https://git-scm.com/downloads" class="uri">https://git-scm.com/downloads</a></p>
 <p>When you’ve successfully started the installer, you should see the Git Setup wizard screen. Follow the Next and Finish prompts to complete the installation. The default options are sensible for most users.</p>
 <p>Run the Git Command Prompt (Git CMD) or Git Bash depending on installation</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-5"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-4"></span>
 <img src="images/Git%20folder.png" alt="Run Git Enviroment" width="60%" />
 <p class="caption">
 Figure 0.3: Run Git Enviroment
 </p>
 </div>
-<p>Personally I prefer running Git Bash as bash is one of the most famous and used shell.
+<p>Personally I prefer running Git Bash as bash is one of the most widely used shell.
 I have summarised The usual commands for bash that you would probably need for running git commands in the table below.</p>
 <table>
-<caption><span id="tab:unnamed-chunk-6">Table 0.2: </span>Bash Most Common Commands.</caption>
+<caption><span id="tab:unnamed-chunk-5">Table 0.2: </span>Bash Most Common Commands.</caption>
 <thead>
 <tr class="header">
 <th align="center">Command</th>
@@ -343,38 +340,40 @@ I have summarised The usual commands for bash that you would probably need for r
 <pre><code>git &lt;&lt;git command&gt;&gt; &lt;&lt;git command parameters&gt;&gt;
 </code></pre>
 <p><strong>config</strong></p>
-
-<div class="exercise">
-<span id="exr:unnamed-chunk-7" class="exercise"><strong>Exercise 0.1  (Configuring Git)  </strong></span>To configure Git with your preferences you would require to run the command <span class="math inline">\(config\)</span>. So run the following commands using YOUR NAME and YOUR UNIVERSITY EMAIL to setup your git installation.
-</div>
-
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-8"></span>
+<p>To configure Git with your preferences you would require to run the command <span class="math inline">\(config\)</span>. So run the following commands using YOUR NAME and YOUR UNIVERSITY EMAIL to setup your git installation.</p>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-6"></span>
 <img src="images/Git%20init.png" alt="Config command example" width="80%" />
 <p class="caption">
 Figure 0.4: Config command example
 </p>
 </div>
-<strong>init</strong>
-
-<div class="exercise">
-<p><span id="exr:unnamed-chunk-9" class="exercise"><strong>Exercise 0.2  (Creating a Git Repository)  </strong></span>
-’’’</p>
+<p>Before you can start creating and cloning repositories we need a place to store them. Lucky for you, Terry from IT has done a wonderful job and we all have access to GitHUb via our university credentials.</p>
+<p>DO NOT GO TO THE MAIN GITHUB WEBSITE INSTEAD GO TO:</p>
+<p><a href="http://github.canterbury.ac.uk" class="uri">http://github.canterbury.ac.uk</a></p>
+<p>Use your university credentials to sign in and create an account. If you already have an account please either create a new account or add your university credentials to that account. Once you enter GitHub I shall assign you to the appropriate team/teams.</p>
+<p><strong>PLEASE use your whole name when creating your account</strong></p>
+<p>We now going to introduce you to the most usual git command:</p>
 <p><strong>clone</strong></p>
-<p><strong>add</strong></p>
-<p><strong>commit</strong></p>
-<p><strong>diff</strong></p>
-<p><strong>stash</strong></p>
-<p><strong>status</strong></p>
-<p><strong>clean</strong></p>
-<p><strong>push</strong></p>
-<h3 id="beyond-source-code" class="unnumbered">Beyond Source Code</h3>
+<p>This command will clone a repository. What that means is that you will download a working copy of a repository.</p>
+<p>Open Git Bash and go to a directory in your current machine that you wish to clone a repository.
+To change directory in Bash use the cd command.
+For example:
+$ cd c:\temp
+Git Bash informs you all the times your current directory. You will see that before your promt.
+Using Git Bash run the following command:
+$ git clone <a href="https://github.com/cccu-uk/MCOMD1ADC2021.git" class="uri">https://github.com/cccu-uk/MCOMD1ADC2021.git</a>"</p>
+<p>Congratulations you have cloned your first repository!</p>
+<p>Now that you have been setup to use GitHub and Git you are more than welcome to start playing around with creating your own private repositories and start learning a bit about git and github.</p>
+<p>I would recommend to go to
+<a href="https://try.github.io/" class="uri">https://try.github.io/</a></p>
+<p>Try and do as many of the tutorials as you can. Especially the section “Learn by doing”.</p>
+</div>
+</div>
+<div id="beyond-source-code" class="section level3 unnumbered">
+<h3>Beyond Source Code</h3>
 <p>The use of Git and GitHub does not have to stop on code only. As a student it can be a valuable tool for all of your assignments. I would recomend to start using these tools not only to famirialise yourself with the tool but also to get to know a community in GitHub and open source code.
 Below is a simple example of how you can use it for group work in any assignment.</p>
-</div>
-
-
-<div class="example">
-<p><span id="exm:unnamed-chunk-10" class="example"><strong>Example 0.2  </strong></span>You are a student and a member of a group that is working on a group assignment set by Gordon. You have two progress checks to pass before your final submission.
+<p>You are a student and a member of a group that is working on a group assignment set by Gordon. You have two progress checks to pass before your final submission.
 Each member of the group needs to do certain aspects of the assignment but each depends on a part of each others work in order to be able to complete your parts.
 You make changes to your group assignment, adding some files for the upcoming progress check of your assignment, then <strong>commit</strong> and <strong>push</strong> those changes with descriptive messages in order for your fellow students in your group to be able to do their parts. You then work on a second part of your assignment that is required only for the end report and <strong>commit</strong> those changes too. As you have committed these separately they are also stored separately in the version history of your Git repo.</p>
 <p>Another member of the group is having issues with a part of the assignment that is needed to be submitted in the progress check. You decided to help them out so you <strong>pull</strong> the latest repository and fix some of the issues your fellow student has and <strong>commit</strong> and <strong>push</strong>. The other student can then <strong>pull</strong> the latest and finish his task. Once all students of the group finish the
@@ -383,11 +382,8 @@ all their changes they <strong>commit</strong> and <strong>push</strong> at thei
 <p>At some point in the near future you complete your degree and you are being interviewed for a position in a company.
 The interviewer asks if you have done something similar to the group assignment that Gordon had set several year ago. You answer “yes” and share your repo which resides in your GitHub account.
 Another candidate has similar experience but has never used Git or GitHub and thus they cannot share any of their work.</p>
-Although you and the other candidate have similar experience and knowledge you get the job just because you can easily show and demonstrate your work. That is all that it takes sometimes to gain or lose a work position.
-</div>
+<p>Although you and the other candidate have similar experience and knowledge you get the job just because you can easily show and demonstrate your work. That is all that it takes sometimes to gain or lose a work position.</p>
 
-
-</div>
 </div>
 </div>
 </div>
